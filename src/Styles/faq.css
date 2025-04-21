@@ -1,0 +1,136 @@
+/* Place this in ../Styles/common.css */
+.faq-container {
+    background-color: #E6E6E6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .faq-content {
+    max-width: 1168px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .faq-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-tab {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    border: 1px solid #ddd;
+  }
+  
+  .faq-tab.active {
+    background-color: #F7F7F7;
+    color: black;
+  }
+  
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .faq-item {
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: black;
+  }
+  
+  .faq-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .faq-answer {
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    background: white;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .faq-title {
+      font-size: 32px;
+    }
+    .faq-tab {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+    .faq-question {
+      font-size: 14px;
+      padding: 15px;
+    }
+    .faq-answer {
+      font-size: 14px;
+      padding: 12px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-title {
+      font-size: 28px;
+    }
+    .faq-tab {
+      font-size: 11px;
+      padding: 6px 10px;
+    }
+    .faq-question {
+      font-size: 13px;
+      padding: 12px;
+    }
+    .faq-answer {
+      font-size: 13px;
+      padding: 10px 12px;
+    }
+    .custom-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
