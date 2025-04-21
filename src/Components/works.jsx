@@ -134,7 +134,7 @@ const Works = () => {
           /* Car Image Positioned at Right End */
           .car-image-wrapper {
             position: absolute;
-            right: -147px;
+            right: -150px;
             top: 58%;
             transform: translateY(-50%);
             display: flex;

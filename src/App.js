@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import { Helmet } from 'react-helmet'; 
 import Navbar from '../src/Components/Navbar';
-import ProGear from "./Pages/ProGear";
+import Home from "./Pages/home";
 import Faq from "../src/Components/fqa";
 import Footer from '../src/Components/footer';
 import SubscriptionPlan from "../src/Components/subscriptionplan";
@@ -18,7 +18,7 @@ function App() {
         </Helmet>
         <Navbar />
     <Routes>
-      <Route path="/" element={<ProGear />} />
+      <Route path="/" element={<Home />} />
       <Route path="/service" element={<Description />} />
       <Route path="/subscription" element={<SubscriptionPlan />} />
       <Route path="/faq" element={<Faq />} />
