@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ProGear/static/css/main.8647d55a.css",
-    "main.js": "/ProGear/static/js/main.eebc74db.js",
+    "main.css": "/ProGear/static/css/main.63d8f7fd.css",
+    "main.js": "/ProGear/static/js/main.4785edd9.js",
     "static/js/453.ed3810f9.chunk.js": "/ProGear/static/js/453.ed3810f9.chunk.js",
     "static/media/Bg-01.png": "/ProGear/static/media/Bg-01.5f6ec42d8c09898d91f2.png",
     "static/media/Bg-02.png": "/ProGear/static/media/Bg-02.f1ca8196b1100a4c028d.png",
     "static/media/car1.png": "/ProGear/static/media/car1.0555445137c683e7d7e3.png",
     "static/media/bussiness.png": "/ProGear/static/media/bussiness.a64a586d37908f1d46fe.png",
     "index.html": "/ProGear/index.html",
-    "main.8647d55a.css.map": "/ProGear/static/css/main.8647d55a.css.map",
-    "main.eebc74db.js.map": "/ProGear/static/js/main.eebc74db.js.map",
+    "main.63d8f7fd.css.map": "/ProGear/static/css/main.63d8f7fd.css.map",
+    "main.4785edd9.js.map": "/ProGear/static/js/main.4785edd9.js.map",
     "453.ed3810f9.chunk.js.map": "/ProGear/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8647d55a.css",
-    "static/js/main.eebc74db.js"
+    "static/css/main.63d8f7fd.css",
+    "static/js/main.4785edd9.js"
   ]
 }
