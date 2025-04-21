@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import { Helmet } from 'react-helmet'; 
 import Navbar from '../src/Components/Navbar';
-import Home from "./Pages/home";
+import Home from "./Pages/ProGear";
 import Faq from "../src/Components/fqa";
 import Footer from '../src/Components/footer';
 import SubscriptionPlan from "../src/Components/subscriptionplan";

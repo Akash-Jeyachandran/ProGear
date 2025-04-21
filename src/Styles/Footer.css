@@ -1,0 +1,49 @@
+.footer-box {
+    background-color: #fff;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .footer-section {
+    max-width: 269.3px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo {
+    width: 140px;
+  }
+  
+  .footer-description {
+    margin-top: 0.5rem;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .contact-icon {
+    width: 20px;
+    margin-right: 8px;
+  }
+  
+  .social-link img {
+    width: 24px;
+  }
+  
+  .footer-link {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    background-color: #0000000A;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,46 @@
+.partners-wrapper {
+    background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 78.85%);
+  }
+  
+  .partners-grid {
+    gap: 2rem !important;
+  }
+  
+  .partner-logo {
+    max-width: 142px;
+    max-height: 152px;
+  }
+  
+  .business-box {
+    background: radial-gradient(55.5% 1544.26% at 78.48% 50%, #FFFEE4 0%, #F4F1BB 100%);
+    max-width: 1126px;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .business-image {
+    max-width: 212px;
+    height: 201px;
+    margin-top: 20px;
+  }
+  
+  .review-card {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .business-box {
+      flex-direction: column;
+      gap: 3rem !important;
+    }
+  
+    .partners-grid {
+      gap: 3rem !important;
+    }
+  }
+  

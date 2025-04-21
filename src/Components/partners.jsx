@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../Styles/Partners.css";
 import CustomButton from "../Components/CustomButton";
 
 // Partner Logos
@@ -42,12 +43,7 @@ const reviews = [
 
 const Partners = () => {
   return (
-    <div
-      className="py-5"
-      style={{
-        background: "linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 78.85%)",
-      }}
-    >
+    <div className="partners-wrapper py-5">
       <div className="container my-5">
         {/* Corporate Partners Section */}
         <div className="text-center">
@@ -55,17 +51,14 @@ const Partners = () => {
           <h2 className="fw-bold">Corporate Partners</h2>
           <div className="d-flex justify-content-center flex-wrap mt-4 partners-grid">
             {[cleartax, moneytap, hike, paperbook, indiagold].map((logo, index) => (
-              <img key={index} src={logo} alt="Partner Logo" className="img-fluid" style={{ maxWidth: "142px", maxHeight: "152px" }} />
+              <img key={index} src={logo} alt="Partner Logo" className="img-fluid partner-logo" />
             ))}
           </div>
         </div>
 
         {/* Business Section */}
-        <div className=" d-flex justify-content-center">
-          <div
-            className="d-flex flex-column flex-md-row align-items-center shadow mt-5 w-100 business-box"
-          >
-            {/* Text Content */}
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column flex-md-row align-items-center shadow mt-5 w-100 business-box">
             <div className="text-center text-md-end p-3">
               <h3 className="fw-bold">ProGear For Business</h3>
               <p>
@@ -73,17 +66,11 @@ const Partners = () => {
                 subscription as Company Cars or via Salary Sacrifice.
               </p>
               <div className="d-flex justify-content-end">
-              <CustomButton text="Learn More" />
+                <CustomButton text="Learn More" />
+              </div>
             </div>
-            </div>
-
-            {/* Image (Moves Below on Small Screens) */}
             <div className="d-flex justify-content-center mt-3 mt-md-0">
-              <img
-                src={businessPerson}
-                alt="Business"
-                className="img-fluid business-image"
-              />
+              <img src={businessPerson} alt="Business" className="img-fluid business-image" />
             </div>
           </div>
         </div>
@@ -93,11 +80,10 @@ const Partners = () => {
           <h2 className="fw-bold">Read what our customers say</h2>
         </div>
 
-        {/* Review Cards */}
         <div className="row mt-4 justify-content-center">
           {reviews.map((review, index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <div className="card shadow-sm p-3 w-100" style={{ maxWidth: "300px", textAlign:"center"}}>
+            <div key={index} className="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-3">
+              <div className="card shadow-sm p-3 w-100 review-card">
                 <h5 className="fw-bold">{review.name}</h5>
                 <p className="text-warning">{"⭐".repeat(review.rating)}</p>
                 <p>{review.review}</p>
@@ -106,50 +92,6 @@ const Partners = () => {
           ))}
         </div>
       </div>
-
-      {/* Responsive Styles */}
-      <style>
-        {`
-          .business-box {
-           background: radial-gradient(55.5% 1544.26% at 78.48% 50%, #FFFEE4 0%, #F4F1BB 100%);
-
-          max-width: 1126px;
-          height: auto;
-          justify-content: space-between;
-          padding: 40px;
-          border-radius: 8px;
-          display: flex;
-          flex-direction: row; /* Default for larger screens */
-          gap: 1rem; /* Default gap */
-        }
-        .partners-grid {
-            gap: 2rem !important; 
-          }
-
-          .business-image {
-            max-width: 212px;
-            height: 201px;
-          }
-
-          @media (max-width: 768px) {
-                    .business-box {
-            flex-direction: column; 
-            gap: 3 rem !important; 
-          }
-                .partners-grid {
-            gap: 3rem !important; 
-          }
-            }
-            .business-image {
-              margin-top: 20px;
-            }
-          }
-
-          
-
-    
-        `}
-      </style>
     </div>
   );
 };
